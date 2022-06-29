@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- is page ko nhi chedna hai   -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="10" />
+    <title>Mini project</title>
+    <!-- <meta http-equiv="refresh" content="10"> -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="navbar">
+            <ul class="nav">
+              <div style="width: 25%;"></div>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <div style="width: 40%;"></div>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li> -->
+            </ul>
+          </div>
+
+          <div style="height: 30px; width: 50%;"></div>
+          <div style="background: transparent !important;" class="jumbotron">
+            <h3 class="text-center">
+              Welcome to the dashboard
+            </h3>
+            <div style="height: 50px; width: 50%;"></div>
+            <p class="text-center">
+              This dashboard displays the battery voltage and battery percentage
+              of the battery of an EV.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="text-center">
+                Battery Voltage
+              </h3>
+              <div style="height: 40px; width: 50%;"></div>
+              <h6 class="text-center">
+                <span id="battery_v" class="batteryv">0</span> V
+              </h6>
+            </div>
+            <div class="col-md-6">
+              <h3 class="text-center">
+                Battery Percentage
+              </h3>
+              <div style="height: 40px; width: 50%;"></div>
+              <h6 class="text-center">
+                <span id="battery_p" class="batteryp">0</span> %
+              </h6>
+            </div>
+          </div>
+          <div></div>
+          <div style="height: 50px; width: 50%;"></div>
+          <div class="d-flex justify-content-center">
+            <h4 class="text-center">Distance that can be covered</h4>
+          </div>
+          <div style="height: 30px;"></div>
+          <div class="d-flex justify-content-center">
+            <h6 class="text-center">
+              <span id="dis" class="disss">0</span> km
+            </h6>
+          </div>
+
+          <div style="height: 50px; width: 50%;"></div>
+          <div class="row">
+            <div id="ather-staion" class="col-md-6 text-center">
+              <a
+                href="index_ather.html"
+                type="button"
+                class="btn btn-success btn-lg"
+              >
+                Ather charging stations
+              </a>
+            </div>
+
+            <div id="tata-station" class="col-md-6 text-center">
+              <a
+                href="index_tata.html"
+                type="button"
+                class="btn btn-success btn-lg"
+              >
+                Tata charging stations
+              </a>
+            </div>
+          </div>
+          <!-- <div style="height: 50px; width: 50%;"></div> -->
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index_main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script type="module" src="back.js"></script>
+  </body>
+</html>

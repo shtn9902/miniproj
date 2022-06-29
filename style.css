@@ -7,10 +7,22 @@
  * Always set the map height explicitly to define the size of the div element
  * that contains the map. 
  */
-#map {
-  height: 100%;
+@media screen and (max-width: 425px) {
+  #ather-station {
+    margin: 3px;
+  }
+  #tata-station {
+    margin: 3px;
+  }
 }
-
+#map_ather {
+  width: 100%;
+  height: 300px;
+}
+#map_tata {
+  width: 100%;
+  height: 300px;
+}
 /* 
  * Optional: Makes the sample page fill the window. 
  */
@@ -20,4 +32,3 @@ body {
   margin: 0;
   padding: 0;
 }
-
